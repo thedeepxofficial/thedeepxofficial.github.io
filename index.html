@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TheDeepX | Connect</title>
+<meta name="description" content="TheDeepX: 3D printing, exhibition models, miniature models and industrial parts. Rajkot, Gujarat.">
+<meta name="theme-color" content="#2f3133">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232f3133'/%3E%3Ctext x='32' y='44' font-size='36' font-family='Arial' font-weight='700' text-anchor='middle' fill='%23b9c8d0'%3EDX%3C/text%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #2f3133;
+    --panel: #3a3d3f;
+    --ink: #b9c8d0;
+    --ink-soft: #8d9aa1;
+    --btn: #b9c8d0;
+    --btn-ink: #24272a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; min-height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 28px 18px 40px;
+    padding-top: max(28px, env(safe-area-inset-top));
+    padding-bottom: max(40px, env(safe-area-inset-bottom));
+  }
+  main { width: 100%; max-width: 420px; }
+
+  .sign {
+    background: var(--panel);
+    border: 1px solid #4a4e51;
+    border-radius: 6px;
+    padding: 34px 26px 30px;
+    margin-bottom: 22px;
+  }
+  h1 {
+    margin: 0 0 22px;
+    font-size: clamp(2.4rem, 12vw, 3.2rem);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1;
+    color: var(--ink);
+  }
+  .services { list-style: none; margin: 0; padding: 0 0 0 4px; }
+  .services li {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 5px 0;
+  }
+  .where { margin: 22px 0 0; font-size: 0.95rem; color: var(--ink-soft); }
+
+  .links { display: grid; gap: 12px; }
+  .btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-height: 64px;
+    padding: 12px 20px;
+    background: var(--btn);
+    color: var(--btn-ink);
+    text-decoration: none;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: transform .12s ease, background .12s ease;
+  }
+  .btn:hover { background: #cfdce3; transform: translateY(-1px); }
+  .btn:active { transform: translateY(0); }
+  .btn:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+  .btn svg { width: 30px; height: 30px; flex: none; }
+  .btn small { display: block; font-size: 0.82rem; font-weight: 400; opacity: .75; margin-top: 2px; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .btn { transition: none; }
+    .btn:hover { transform: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <section class="sign">
+    <h1>TheDeepX</h1>
+    <ul class="services">
+      <li>3D Printing</li>
+      <li>Exhibition Models</li>
+      <li>Miniature Models</li>
+      <li>Industrial Parts</li>
+    </ul>
+    <p class="where">Rajkot, Gujarat</p>
+  </section>
+
+  <nav class="links" aria-label="Contact TheDeepX">
+    <a class="btn" href="https://wa.me/919099634706" target="_blank" rel="noopener">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M4 28l2-7.2A12 12 0 1 1 11 26z"/>
+        <path d="M12 10.5c-.8 1-1 2.4-.2 4.1 1 2.2 3.2 4.4 5.5 5.3 1.6.6 2.8.2 3.6-.7l.4-.9-2.7-1.4-1.1 1.1c-1.4-.5-3-2-3.6-3.5l1-1.1-1.3-2.7z" fill="currentColor" stroke="none"/>
+      </svg>
+      <span>Chat on WhatsApp<small>+91 90996 34706</small></span>
+    </a>
+
+    <a class="btn" href="https://www.instagram.com/thedeepx.in" target="_blank" rel="noopener">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="4" y="4" width="24" height="24" rx="7"/>
+        <circle cx="16" cy="16" r="5.5"/>
+        <circle cx="23" cy="9" r="1.2" fill="currentColor" stroke="none"/>
+      </svg>
+      <span>Follow on Instagram<small>@thedeepx.in</small></span>
+    </a>
+
+    <a class="btn" href="https://www.thedeepx.in/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="16" cy="16" r="12"/>
+        <ellipse cx="16" cy="16" rx="5" ry="12"/>
+        <path d="M4 16h24M6 9.5h20M6 22.5h20"/>
+      </svg>
+      <span>Visit website &amp; store<small>thedeepx.in</small></span>
+    </a>
+  </nav>
+</main>
+</body>
+</html>
